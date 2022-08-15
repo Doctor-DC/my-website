@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { Profile } from '../components/Profile/index';
+import { Contribute } from '../components/Contribute/index';
 
 import styles from './index.module.css';
+import { GetContributors } from '../utils/contributors';
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -36,7 +39,18 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+
+  const [contributors, setContributors] = useState([])
+  useEffect(() => {
+    GetContributors()
+    // .then((res) => res.json())
+    .then((data) => {
+      console.log(data)
+      setContributors(data)
+    })
+  }, [])
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -44,6 +58,8 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        {/* {ContributesFeature()} */}
+        <Contribute contributors={contributors} />
       </main>
     </Layout>
   );
