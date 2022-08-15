@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/rest'
 
-const octokit = new Octokit({ auth: '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' });
+const octokit = new Octokit();
 
 export async function GetContributors() {
     const {data} = await octokit.repos.listContributors({
