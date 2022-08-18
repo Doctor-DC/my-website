@@ -111,8 +111,8 @@ html {
 .contri-user {
   display: flex;
   flex-direction: column;
-  width: 2vw;
-  height: 8vh;
+  width: 4vw;
+  height: 10vh;
   align-items: center;
   justify-content: center;
 }
@@ -120,8 +120,8 @@ html {
 
 .contri-user-avatar {
   display: block;
-  width: 2vw;
-  height: 5vh;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   overflow: hidden;
   transition: all 0.15s ease-in-out;
@@ -155,7 +155,7 @@ html {
 .expand {
   margin-left: 10%;
   margin-right: 10%;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 }
 
 .expand-all {
