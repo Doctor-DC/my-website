@@ -156,7 +156,7 @@ html {
 .expand {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 2%; //
+  margin-top: 2%;
   margin-bottom: 2%;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 }
