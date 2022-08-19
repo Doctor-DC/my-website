@@ -13,7 +13,7 @@ export const Contribute = (props) => {
         {!expand && <div className={styles['container']}>
           <div className={styles["scroll-parent"]}>
             <div className={`${styles['scroll-element']} ${styles['primary']}`}>
-              {props.contributors.slice(0, 9).map((user, key) => (
+              {props.contributors.slice(0, 19).map((user, key) => (
                 // <img src={user.avatar_url} />
                 <div className={styles["contri-user"]} key={key}>
                   <img src={user.avatar_url} className={styles["contri-user-avatar"]} />
@@ -26,7 +26,7 @@ export const Contribute = (props) => {
                 </div>
               ))}
             </div>
-            <div className={`${styles['scroll-element']} ${styles['secondary']}`}>
+            {/* <div className={`${styles['scroll-element']} ${styles['secondary']}`}>
               {props.contributors.slice(0, 9).map((user, key) => (
                 // <img src={user.avatar_url} />
                 <div className={styles["contri-user"]} key={key}>
@@ -38,7 +38,7 @@ export const Contribute = (props) => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
         }
