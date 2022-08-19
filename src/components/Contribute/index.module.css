@@ -111,7 +111,7 @@ html {
 .contri-user {
   display: flex;
   flex-direction: column;
-  width: 8vw;
+  /* width: 8vw; */
   height: 10vh;
   align-items: center;
   justify-content: center;
