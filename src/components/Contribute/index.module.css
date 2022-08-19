@@ -135,6 +135,7 @@ html {
 .contri-user-info {
   text-align: center;
   white-space: nowrap;
+  margin: 0 6px;
 }
 
 .background {
