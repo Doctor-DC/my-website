@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTrail, animated } from 'react-spring';
-import HeroMain from './img/hero_main.svg';
+import Button from "../Button";
 import Link from '@docusaurus/Link';
 import gitMain from './img/code.gif';
 import styles from './styles.module.css';
@@ -26,11 +26,15 @@ function Hero() {
           <span className={styles.intro__name}>DC</span>
         </animated.div>
         <animated.p style={animatedTexts[1]}>
-          {`在这里你能了解到各类实战开发的所遇到的问题，帮助你在学习的过程了解最新的技术栈，并希望我的个人经历对你有所启发。`}
+          {/* {`在这里你能了解到各类实战开发的所遇到的问题，帮助你在学习的过程了解最新的技术栈，并希望我的个人经历对你有所启发。`} */}
+          记录学习、留住生活，在与最新技术保持同步的同时，我始终寻求进步并成长为专业的前端开发人员
         </animated.p>
-        <Link className={styles.bloghome__button} to='/docs/intro'>
-          🖱Click Here!
-        </ Link>
+        <Button
+            isLink
+            href={"/docs/intro"}
+          >
+            开始阅读
+          </Button>
         {/* <SocialLinks animatedProps={animatedTexts[4]} />
         {
           <animated.div style={animatedTexts[2]}>
