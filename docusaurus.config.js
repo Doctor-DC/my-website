@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'WTF学院',
+        title: 'DC website',
         logo: {
           alt: 'WTF Logo',
           src: 'img/wtflogo.png',
@@ -67,7 +67,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'WTFSolidity',
+            label: '文档',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
