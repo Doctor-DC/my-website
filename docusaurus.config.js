@@ -69,14 +69,8 @@ const config = {
             position: 'left',
             label: '文档',
           },
-          //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/AmazingAng/WTFSolidity/discussions',
-            label: '论坛',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/AmazingAng/WTFSolidity',
+            to: 'https://github.com/Doctor-DC',
             label: 'GitHub',
             position: 'right',
           }
@@ -86,56 +80,44 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '教程',
+            title: '文档',
             items: [
               {
-                label: 'WTF Solidity',
+                label: '记录',
                 to: '/docs/intro',
               },
             ],
           },
-          {
-            title: '社群',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/5akcruXrsk',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/0xAA_Science',
-              },
-              {
-                label: '微信群',
-                href: 'https://docs.google.com/forms/d/e/1FAIpQLSe4KGT8Sh6sJ7hedQRuIYirOoZK_85miz3dw7vA1-YjodgJ-A/viewform',
-              },
-            ],
-          },
+          // {
+          //   title: '社群',
+          //   items: [
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discord.gg/5akcruXrsk',
+          //     },
+
+          //   ],
+          // },
           {
             title: 'More',
             items: [
               {
-                label: '论坛',
-                to: 'https://github.com/AmazingAng/WTFSolidity/discussions',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/WTFAcademy',
-              },
-              {
-                label: 'PeopleDAO',
-                href: 'https://people-dao.com/',
+                to: 'https://github.com/Doctor-DC',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} WTF Academy. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Dc Academy. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    "./postcss-tailwind-loader"
+  ]
 };
 
 module.exports = config;

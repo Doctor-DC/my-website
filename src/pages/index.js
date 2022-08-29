@@ -7,10 +7,11 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { Profile } from '../components/Profile/index';
 import { Contributor } from '../components/Contributor/index.js';
 import Hero from '@site/src/components/Hero';
+import ImageList from '@site/src/components/tailwindTemplate';
 
 import styles from './index.module.css';
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <Profile />
@@ -38,7 +39,7 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -47,6 +48,7 @@ export default function Home() {
       <main>
         {/* <HomepageFeatures /> */}
         <Hero />
+        <ImageList />
         <Contributor />
       </main>
     </Layout>

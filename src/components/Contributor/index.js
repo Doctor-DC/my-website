@@ -59,7 +59,7 @@ export const Contributor = () => {
     <section>
       <div className={styles['background']}>
         <div className={styles["site-section-title"]}>
-          社区贡献者
+          我的关注
         </div>
           {expand && expandList()}
           <div className={styles['show-list']}>

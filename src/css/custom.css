@@ -5,6 +5,10 @@
  */
 
 /* You can override the default Infima variables here. */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
   --ifm-color-primary: hsl(214deg, 100%, 60%);
 
@@ -33,3 +37,9 @@
   --ifm-button-color: #333333;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* .tailwind {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+} */

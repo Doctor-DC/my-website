@@ -21,7 +21,7 @@
   }
   
   .bloghome__intro .hero_text {
-    font-size: calc(1.8em + 1.2vw);
+    font-size: calc(1.8em + 0.2vw);
     /* font-weight: 600; */
   }
   
