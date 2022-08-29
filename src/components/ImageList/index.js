@@ -14,7 +14,7 @@ export const ImageList = () => {
         <img
           src={HomeImg}
           // className="w-full h-full object-cover relative max-w-4xl {styles.hardware}"
-          className={'rounded md:rounded-large w-full h-full object-cover relative max-w-4xl'}
+          className={'rounded-large md:rounded-large w-full h-full object-cover relative max-w-4xl'}
           alt="..."
         />
       </div>
