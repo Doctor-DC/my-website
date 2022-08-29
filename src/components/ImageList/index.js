@@ -6,7 +6,7 @@ import wanju2 from '@site/static/img/wanju2.jpeg'
 import wangwen from '@site/static/img/wangwen.jpeg'
 import styles from './styles.module.css';
 
-export default function ImageList() {
+export const ImageList = () => {
   return (
     <div className={styles.back}>
       <h4 class="text-3xl font-bold tracking-tighter top-0 left-0 mt-12 ml-20">dreamly hardware equipment</h4>
