@@ -10,7 +10,7 @@ export const ImageList = () => {
   return (
     <div className={styles.back}>
       <h2 className={styles.title}>dreamly hardware equipment</h2>
-      <div class="flex flex-column justify-around m-9">
+      <div className="flex flex-column justify-around m-9">
         <img
           src={HomeImg}
           // className="w-full h-full object-cover relative max-w-4xl {styles.hardware}"
@@ -18,15 +18,15 @@ export const ImageList = () => {
           alt="..."
         />
       </div>
-      <div class="w-full py-32 px-24 flex flex-wrap justify-around relative">
+      <div className="w-full py-32 px-24 flex flex-wrap justify-around relative">
 
-        <img src={gaoda} class="w-64 h-64 object-cover mb-12 md:mb-0" />
-        <img src={wangwen} class="w-64 h-64 object-cover mb-12 md:mb-0" />
-        <img src={wanju2} class="w-64 h-64 object-cover mb-12 md:mb-0" />
-        <img src={ball} class="w-64 h-64 object-cover" />
+        <img src={gaoda} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
+        <img src={wangwen} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
+        <img src={wanju2} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
+        <img src={ball} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
 
-        <h4 class="text-3xl  font-bold tracking-tighter absolute top-0 left-0 mt-12 ml-20">life</h4>
-        <h4 class="text-3xl font-bold tracking-tighter absolute bottom-0 right-0 mb-16 mr-20">fragment</h4>
+        <h4 className={`text-3xl  font-bold tracking-tighter absolute top-0 left-0 mt-12 ml-20 ${styles.title}`}>life</h4>
+        <h4 className="text-3xl font-bold tracking-tighter absolute bottom-0 right-0 mb-16 mr-20">fragment</h4>
 
       </div>
     </div>

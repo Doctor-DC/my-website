@@ -43,9 +43,10 @@ function Hero() {
         <Button
             isLink
             href={"/docs/intro"}
+            className={styles.expand}
           >
             开始阅读
-          </Button>
+        </Button>
         <p lign="center" style={{ width: '80%', marginTop: '100px' }}>
         <a href="https://github.com/Doctor-DC"><img alt="React" src="https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB" /></a>
         <a href="https://github.com/Doctor-DC"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white"/></a>

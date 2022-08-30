@@ -23,3 +23,12 @@
   transform: skewX(3deg) skewY(4deg);
   text-shadow: 1rem 1rem 2rem rgb(0 0 0 / 20%);
 }
+
+.img-list {
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.img-list:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}

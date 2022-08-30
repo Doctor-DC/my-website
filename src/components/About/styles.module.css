@@ -5,7 +5,7 @@
 .container {
     max-width: 1400px;
     margin: auto;
-    padding: 2rem 2rem;
+    padding: 6rem 2rem;
 }
 
 .custom-style {
@@ -41,8 +41,8 @@
   }
 
 .about-items {
-      margin-top: 3rem;
-      text-align: center;   
+    margin-top: auto;
+    text-align: center;   
   }
 
 .about-title {

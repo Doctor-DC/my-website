@@ -96,6 +96,9 @@
     width: 100%;
   }
 
+  .expand:hover {
+    transform: scale(1.05)
+  }
   
   :global(.hero_main_svg__js) g,
   :global(.hero_main_svg__todo) path:nth-child(1),
