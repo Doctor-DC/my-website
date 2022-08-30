@@ -1,11 +1,11 @@
 import {createClient} from '@supabase/supabase-js';
 
 const CLIENT_URL = process.env.NODE_ENV === 'production' ? 
-										'https://vjcxgodediuyprqxqpzo.supabase.co':
-										'https://hyvejtfnrltucuinvlsc.supabase.co';
+										'https://jjbvnefqhottbivaybsi.supabase.co':
+										'https://jjbvnefqhottbivaybsi.supabase.co';
 const ANON_KEY = process.env.NODE_ENV === 'production' ?
-										 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZqY3hnb2RlZGl1eXBycXhxcHpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTkxMDAwODYsImV4cCI6MTk3NDY3NjA4Nn0.047HbUPIrWls_LqEt-lF5AVsiz_MKIadO2ULI1Et_Fs':
-										 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh5dmVqdGZucmx0dWN1aW52bHNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTkwMjUzMzcsImV4cCI6MTk3NDYwMTMzN30.3tGq0qUkaRV87vlyYFZ4oGSOixiGBvOkbLmBL9qfkxE';
+										 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpqYnZuZWZxaG90dGJpdmF5YnNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjE4MjQwNTgsImV4cCI6MTk3NzQwMDA1OH0.q9n3UqhmnRLiiLkNwnW0jOMTMfYHALVjU-gad--WEKY':
+										 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpqYnZuZWZxaG90dGJpdmF5YnNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjE4MjQwNTgsImV4cCI6MTk3NzQwMDA1OH0.q9n3UqhmnRLiiLkNwnW0jOMTMfYHALVjU-gad--WEKY';
 export const supabase = createClient(CLIENT_URL, ANON_KEY)
 
 export async function signout() {
