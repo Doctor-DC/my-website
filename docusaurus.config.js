@@ -60,7 +60,7 @@ const config = {
         title: 'DC website',
         logo: {
           alt: 'WTF Logo',
-          src: 'img/panda.png',
+          src: 'img/cat.png',
         },
         items: [
           {
@@ -71,8 +71,10 @@ const config = {
           },
           {
             to: 'https://github.com/Doctor-DC',
-            label: 'GitHub',
+            // label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           }
         ],
       },
