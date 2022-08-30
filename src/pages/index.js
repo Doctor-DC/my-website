@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { Profile } from '../components/Profile/index';
 import { Contributor } from '../components/Contributor/index.js';
 import Hero from '@site/src/components/Hero';
+import { AboutMe } from '../components/About';
 import { ImageList } from '../components/ImageList/index';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         {/* <HomepageFeatures /> */}
         <Hero />
+        <AboutMe />
         <ImageList />
         <Contributor />
       </main>

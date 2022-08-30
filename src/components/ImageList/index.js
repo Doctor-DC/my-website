@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 export const ImageList = () => {
   return (
     <div className={styles.back}>
-      <h4 class="text-3xl font-bold tracking-tighter top-0 left-0 mt-12 ml-20">dreamly hardware equipment</h4>
+      <h2 className={styles.title}>dreamly hardware equipment</h2>
       <div class="flex flex-column justify-around m-9">
         <img
           src={HomeImg}

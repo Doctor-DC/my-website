@@ -23,11 +23,11 @@ function Hero() {
       <div className={styles.bloghome__intro}>
         <animated.div style={animatedTexts[0]} className={styles.hero_text}>
           Hello! I'm 
-          <span className={styles.intro__name}> Doctor-DC</span>
+          <a href="https://github.com/Doctor-DC" className={styles.intro__name}> Doctor-DC</a>
         </animated.div>
-        <animated.p style={animatedTexts[1]}>
+        {/* <animated.p style={animatedTexts[1]}>
         Passionate front-end developer who lives and works in Shanghai.
-        </animated.p>
+        </animated.p> */}
         {/* <animated.p style={animatedTexts[2]}>
           ⚡ Love rock 🤟🏼🎸
         </animated.p> */}

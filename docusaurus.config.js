@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'WTF学院',
-  tagline: '面向Web2程序员的Web3开源学院',
+  title: 'DC website',
+  tagline: '个人网站',
   url: 'https://wtf.academy',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'WTFAcademy', // Usually your GitHub org/user name.
+  organizationName: 'DC', // Usually your GitHub org/user name.
   projectName: 'frontend', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful

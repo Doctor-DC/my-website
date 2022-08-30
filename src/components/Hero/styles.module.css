@@ -56,7 +56,21 @@
   }
   
   .intro__name {
-    color: var(--ifm-color-primary);
+    max-width: auto;
+    margin: auto;
+    font-weight: 600;
+    font-size: 2.813rem;
+    background-image: linear-gradient( to right, rgb(117, 78, 249), #d784af ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: 0.4s;
+  }
+
+  .intro__name:hover {
+    transform: skewX(3deg) skewY(4deg);
+    text-shadow: 1rem 1rem 2rem rgb(0 0 0 / 20%);
   }
   
   .bloghome__image {
