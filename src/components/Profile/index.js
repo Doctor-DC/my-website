@@ -13,13 +13,13 @@ export const Profile = () => {
     return (
 			<>			
 				<img className={styles.avatar} src={user.user_metadata?.avatar_url}/>
-				<span className={styles.text} onClick={signout}>signout</span>;
+				<span className={styles.text} onClick={signout}>Signout</span>
 			</>
 		)
   } else {
     return (
       <Link className={styles.text} to="/login">
-        login
+        Login
       </Link>
     );
   }

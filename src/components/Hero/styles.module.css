@@ -69,10 +69,16 @@
   }
 
   .intro__name:hover {
-    transform: skewX(3deg) skewY(4deg);
+    transform: skewX(10deg);
     text-shadow: 1rem 1rem 2rem rgb(0 0 0 / 20%);
   }
   
+  .github {
+    width: 2.813rem;
+    display: inline;
+    padding-bottom: 10px;
+  }
+
   .bloghome__image {
     overflow: hidden;
     width: 95%;
@@ -89,6 +95,7 @@
     height: auto;
     width: 100%;
   }
+
   
   :global(.hero_main_svg__js) g,
   :global(.hero_main_svg__todo) path:nth-child(1),

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTrail, animated } from 'react-spring';
 import Button from "../Button";
-import Link from '@docusaurus/Link';
 import gitMain from './img/code.gif';
 import styles from './styles.module.css';
+import github from '@site/static/img/github.png';
+
 
 function Hero() {
 
@@ -23,7 +24,11 @@ function Hero() {
       <div className={styles.bloghome__intro}>
         <animated.div style={animatedTexts[0]} className={styles.hero_text}>
           Hello! I'm 
-          <a href="https://github.com/Doctor-DC" className={styles.intro__name}> Doctor-DC</a>
+          <a href="https://github.com/Doctor-DC">
+          <div className={styles.intro__name}>
+             Doctor-DC <img className={styles.github} src={github}></ img>
+            </div>
+          </a>
         </animated.div>
         {/* <animated.p style={animatedTexts[1]}>
         Passionate front-end developer who lives and works in Shanghai.
