@@ -60,7 +60,7 @@ const config = {
         title: 'DC website',
         logo: {
           alt: 'WTF Logo',
-          src: 'img/cat.png',
+          src: 'img/cat-purple.png',
         },
         items: [
           {
