@@ -32,3 +32,19 @@
 .img-list:hover {
   transform: translateY(-1.5rem) scale(1.03);
 }
+
+@media (max-width: 1000px) {
+  .img-life {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .img-list {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 2rem;
+    padding: 30px 30px 10px 30px;
+    max-width: 120%;
+  }
+}

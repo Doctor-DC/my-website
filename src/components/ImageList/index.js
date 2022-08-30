@@ -18,7 +18,7 @@ export const ImageList = () => {
           alt="..."
         />
       </div>
-      <div className="w-full py-32 px-24 flex flex-wrap justify-around relative">
+      <div className={`w-full py-32 px-24 flex flex-wrap justify-around relative ${styles['img-life']}`}>
 
         <img src={gaoda} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
         <img src={wangwen} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
