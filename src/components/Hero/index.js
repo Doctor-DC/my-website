@@ -37,7 +37,7 @@ function Hero() {
           ⚡ Love rock 🤟🏼🎸
         </animated.p> */}
         <animated.p style={animatedTexts[2]}>
-          Documenting learning, retaining life, I always seek to improve and grow as a professional front-end developer while keeping pace with the latest technolog
+          Documenting learning, retaining life, I always seek to improve and grow as a professional front-end developer while keeping pace with the latest technology.
           {/* 记录学习、留住生活，在与最新技术保持同步的同时，我始终寻求进步并成长为专业的前端开发人员 */}
         </animated.p>
         <Button

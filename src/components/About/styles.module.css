@@ -37,7 +37,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
-  
   }
 
 .about-items {
@@ -74,6 +73,21 @@
     100%{
         transform: rotate(360deg);
      }
+ }
+
+
+ @media (max-width: 1000px) {
+   .custom-style {
+   }
+   .container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem 2rem;
+    }
+   .about-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 2rem;
+   }
  }
 
  /*===========================
