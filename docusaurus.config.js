@@ -9,6 +9,7 @@ const config = {
   title: 'DC website',
   tagline: '个人网站',
   url: 'https://wtf.academy',
+  staticDirectories: ['public', 'static'],
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

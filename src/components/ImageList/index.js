@@ -25,8 +25,8 @@ export const ImageList = () => {
         <img src={wanju2} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
         <img src={ball} className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
 
-        <h4 className={`text-3xl  font-bold tracking-tighter absolute top-0 left-0 mt-12 ml-20 ${styles.title}`}>life</h4>
-        <h4 className="text-3xl font-bold tracking-tighter absolute bottom-0 right-0 mb-16 mr-20">fragment</h4>
+        <h4 className={`text-3xl  font-bold tracking-tighter absolute top-10 left-0 mt-12 ml-20 ${styles.title}`}>life</h4>
+        <h4 className="text-3xl font-bold tracking-tighter absolute bottom-5 right-0 mb-16 mr-20">fragment</h4>
 
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Octokit } from '@octokit/rest'
 const octokit = new Octokit();
 
 export async function GetContributors(
-    username =  'Doctor-DC',
+    username = 'Doctor-DC',
     page = 1,
     per_page = 100
 ) {

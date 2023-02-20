@@ -22,6 +22,7 @@
     "@mdx-js/react": "^1.6.22",
     "@octokit/rest": "^19.0.4",
     "@supabase/supabase-js": "^1.35.4",
+    "@tensorflow/tfjs": "^4.2.0",
     "clsx": "^1.2.1",
     "framer-motion": "^7.2.1",
     "octokit": "^2.0.7",

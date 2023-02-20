@@ -9,6 +9,7 @@ import { Contributor } from '../components/Contributor/index.js';
 import Hero from '@site/src/components/Hero';
 import { AboutMe } from '../components/About';
 import { ImageList } from '../components/ImageList/index';
+import { App } from '../components/yolo/index'
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         {/* <HomepageFeatures /> */}
         <Hero />
+        <App />
         <AboutMe />
         <ImageList />
         <Contributor />

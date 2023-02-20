@@ -34,9 +34,15 @@
   }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6rem;
+  padding-bottom: 60px;
+  background-color: #f4f8fc;
+  height: 300px;
+  border-radius: 40px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   }
 
 .about-items {
