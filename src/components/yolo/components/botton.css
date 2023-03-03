@@ -1,0 +1,11 @@
+.expand {
+    border: none;
+    margin: 0 10px;
+  }
+
+.expand:hover {
+    transform: scale(1.05);
+    /* margin: 0 10px; */
+    border: none;
+
+}

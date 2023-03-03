@@ -5,6 +5,8 @@ import Loader from "./components/loader";
 import ButtonHandler from "./components/btn-handler";
 import { detectImage, detectVideo } from "./utils/detect";
 import "./style/App.css";
+import yoloImg from '@site/static/img/yolo.png'
+
 
 export const App = () => {
   const [loading, setLoading] = useState({ loading: true, progress: 0 }); // loading state
@@ -52,7 +54,7 @@ export const App = () => {
     <div className="App">
       {loading.loading && <Loader>Loading model... {(loading.progress * 100).toFixed(2)}%</Loader>}
       <div className="header">
-        <h1>📷 YOLOv5 Live Detection App</h1>
+        <p style={{ fontSize: '2rem' }}>📷 YOLOv5 Live Detection App</p>
         <p>
           YOLOv5 live detection application on browser powered by <code>tensorflow.js</code>
         </p>
@@ -82,7 +84,7 @@ export const App = () => {
         <canvas width={model.inputShape[1]} height={model.inputShape[2]} ref={canvasRef} />
       </div>
 
-      <ButtonHandler imageRef={imageRef} cameraRef={cameraRef} videoRef={videoRef} />
+      <ButtonHandler imageRef={imageRef} cameraRef={cameraRef} videoRef={videoRef}/>
     </div>
   );
 };

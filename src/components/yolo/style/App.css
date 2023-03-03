@@ -1,11 +1,13 @@
 .App {
   height: 100%;
-  padding: 0 10px;
+  padding: 30px 10px;
+  margin: 20px 100px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(125deg, rgba(0,132,255,.1), #f0f8ff03, #f0f8ff00, #a31ccf66)
 }
 
 .App > * {
@@ -14,6 +16,7 @@
 
 .header {
   text-align: center;
+  text: 10px;
 }
 
 .header p {

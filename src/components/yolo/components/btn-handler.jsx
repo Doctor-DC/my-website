@@ -1,5 +1,9 @@
+import { Center } from "@mantine/core";
 import React, { useState, useRef } from "react";
 import { Webcam } from "../utils/webcam";
+import Button from "../../Button";
+import "./botton.css";
+
 
 const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
   const [streaming, setStreaming] = useState(null); // streaming state
@@ -44,7 +48,8 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
         ref={inputImageRef}
       />
-      <button
+      <Button
+        className='expand'
         onClick={() => {
           // if not streaming
           if (streaming === null) inputImageRef.current.click();
@@ -54,7 +59,7 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
       >
         {streaming === "image" ? "Close" : "Open"} Image
-      </button>
+      </Button>
 
       {/* Video Handler */}
       <input
@@ -71,7 +76,8 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
         ref={inputVideoRef}
       />
-      <button
+      <Button
+        className='expand'
         onClick={() => {
           // if not streaming
           if (streaming === null || streaming === "image") inputVideoRef.current.click();
@@ -81,10 +87,11 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
       >
         {streaming === "video" ? "Close" : "Open"} Video
-      </button>
+      </Button>
 
       {/* Webcam Handler */}
-      <button
+      <Button
+        className='expand'
         onClick={() => {
           // if not streaming
           if (streaming === null || streaming === "image") {
@@ -103,7 +110,7 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
       >
         {streaming === "camera" ? "Close" : "Open"} Webcam
-      </button>
+      </Button>
     </div>
   );
 };
