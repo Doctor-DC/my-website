@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import HomeImg from '@site/static/img/home.jpeg';
-import Zmage from 'react-zmage'
 import styles from './styles.module.css';
 const requireContext = require.context("./music", false, /^\.\/.*\.jpeg$/);
 const imageSrc = requireContext.keys().map(requireContext).map(it => {return it.default});
@@ -23,7 +22,7 @@ export const ImageList = () => {
         {
             imageSrc.map((it,index) => {
                 return (
-                    <Zmage src={it} key={index}  className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
+                    <img src={it} key={index}  className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
                 )
             })
         }

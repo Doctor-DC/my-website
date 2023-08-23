@@ -30,7 +30,12 @@
 }
 
 .img-list:hover {
-  transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.8);
+}
+
+.img-list:active {
+    opactiy: 1;
+    transform: scale(2);
 }
 
 @media (max-width: 1000px) {
