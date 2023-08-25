@@ -70,6 +70,7 @@ const config = {
             position: 'left',
             label: '文档',
           },
+          {to: 'macos', label: 'MacOs', position: 'left'},
           {
             to: 'https://github.com/Doctor-DC',
             // label: 'GitHub',

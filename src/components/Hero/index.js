@@ -2,6 +2,7 @@ import React from 'react';
 import { useTrail, animated } from 'react-spring';
 import Button from "../Button";
 import gitMain from './img/code.gif';
+// import gitMain from './img/1.jpg';
 import styles from './styles.module.css';
 import github from '@site/static/img/github.png';
 
