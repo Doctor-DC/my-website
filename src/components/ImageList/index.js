@@ -10,7 +10,7 @@ export const ImageList = () => {
   return (
     <div className={styles.back}>
       <h2 className={styles.title}>dreamly hardware equipment</h2>
-      <div className="flex flex-column justify-around m-9">
+      <div className="flex flex-column justify-around m-9 ">
         <img
           src={HomeImg}
           // className="w-full h-full object-cover relative max-w-4xl {styles.hardware}"

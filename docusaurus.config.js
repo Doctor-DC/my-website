@@ -59,6 +59,7 @@ const config = {
     ({
       navbar: {
         title: 'DC website',
+        // hideOnScroll: true,
         logo: {
           alt: 'WTF Logo',
           src: 'img/cat-purple.png',
@@ -67,10 +68,19 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: '文档',
+            position: 'right',
+            label: '📖文档',
           },
-          {to: 'macos', label: 'MacOs', position: 'left'},
+          {
+            position: "right",
+            label: "💎Demo",
+            items: [
+              {
+                label: "苹果系统",
+                to: "/macos/macos",
+              }
+            ]
+          },
           {
             to: 'https://github.com/Doctor-DC',
             // label: 'GitHub',
@@ -92,16 +102,6 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: '社群',
-          //   items: [
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discord.gg/5akcruXrsk',
-          //     },
-
-          //   ],
-          // },
           {
             title: 'More',
             items: [
@@ -120,7 +120,17 @@ const config = {
       },
     }),
   plugins: [
-    "./postcss-tailwind-loader"
+    "./postcss-tailwind-loader",
+    async function unocssPlugin() {
+        return {
+          name: 'docusaurus-unocss',
+          configurePostCss(postcssOptions) {
+            postcssOptions.plugins.push(require('postcss-nesting'))
+            postcssOptions.plugins.push(require('@unocss/postcss'))
+            return postcssOptions
+          },
+        }
+      },
   ]
 };
 

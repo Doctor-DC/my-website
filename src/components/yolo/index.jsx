@@ -8,7 +8,7 @@ import "./style/App.css";
 import yoloImg from '@site/static/img/yolo.png'
 
 
-export const App = () => {
+export const Yolo = () => {
   const [loading, setLoading] = useState({ loading: true, progress: 0 }); // loading state
   const [model, setModel] = useState({
     net: null,
@@ -54,7 +54,7 @@ export const App = () => {
     <div className="App">
       {loading.loading && <Loader>Loading model... {(loading.progress * 100).toFixed(2)}%</Loader>}
       <div className="header">
-        <p style={{ fontSize: '2rem' }}>📷 YOLOv5 Live Detection App</p>
+        <p style={{ fontSize: '3rem' }}>📷 YOLOv5 Live Detection App</p>
         <p>
           YOLOv5 live detection application on browser powered by <code>tensorflow.js</code>
         </p>

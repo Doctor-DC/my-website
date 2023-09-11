@@ -8,11 +8,11 @@ export const Contributor = () => {
   const [contributors, setContributors] = useState([]);
 
   useEffect(() => {
-    GetContributors()
-      .then((data) => {
-        console.log(data)
-        setContributors(data)
-      })
+    // GetContributors()
+    //   .then((data) => {
+    //     console.log(data)
+    //     setContributors(data)
+    //   })
   }, [])
 
   const scrollList = () => {
