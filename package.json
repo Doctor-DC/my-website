@@ -31,7 +31,7 @@
     "@unocss/reset": "^0.55.7",
     "clsx": "^1.2.1",
     "crypto-js": "^4.1.1",
-    "framer-motion": "^6.5.1",
+    "framer-motion": "^10.12.17",
     "octokit": "^2.0.7",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
