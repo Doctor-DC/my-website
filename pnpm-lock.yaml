@@ -83,6 +83,9 @@ dependencies:
   rooks:
     specifier: ^7.14.1
     version: registry.npmmirror.com/rooks@7.14.1(react-dom@17.0.2)(react@17.0.2)
+  semver:
+    specifier: ^7.5.4
+    version: registry.npmmirror.com/semver@7.5.4
   styled-components:
     specifier: ^5.3.5
     version: registry.npmmirror.com/styled-components@5.3.5(@babel/core@7.22.11)(react-dom@17.0.2)(react-is@18.2.0)(react@17.0.2)
@@ -770,6 +773,7 @@ packages:
     name: '@babel/plugin-proposal-async-generator-functions'
     version: 7.20.7
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
@@ -877,6 +881,7 @@ packages:
     name: '@babel/plugin-proposal-optional-catch-binding'
     version: 7.18.6
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
@@ -4127,14 +4132,14 @@ packages:
     version: 1.6.22
     dev: false
 
-  registry.npmmirror.com/@motionone/animation@10.15.1:
-    resolution: {integrity: sha512-mZcJxLjHor+bhcPuIFErMDNyrdb2vJur8lSfMCsuCB4UyV8ILZLvK+t+pg56erv8ud9xQGK/1OGPt10agPrCyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/animation/-/animation-10.15.1.tgz}
+  registry.npmmirror.com/@motionone/animation@10.16.3:
+    resolution: {integrity: sha512-QUGWpLbMFLhyqKlngjZhjtxM8IqiJQjLK0DF+XOF6od9nhSvlaeEpOY/UMCRVcZn/9Tr2rZO22EkuCIjYdI74g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/animation/-/animation-10.16.3.tgz}
     name: '@motionone/animation'
-    version: 10.15.1
+    version: 10.16.3
     dependencies:
-      '@motionone/easing': registry.npmmirror.com/@motionone/easing@10.15.1
-      '@motionone/types': registry.npmmirror.com/@motionone/types@10.15.1
-      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.15.1
+      '@motionone/easing': registry.npmmirror.com/@motionone/easing@10.16.3
+      '@motionone/types': registry.npmmirror.com/@motionone/types@10.16.3
+      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.16.3
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
@@ -4143,45 +4148,45 @@ packages:
     name: '@motionone/dom'
     version: 10.12.0
     dependencies:
-      '@motionone/animation': registry.npmmirror.com/@motionone/animation@10.15.1
-      '@motionone/generators': registry.npmmirror.com/@motionone/generators@10.15.1
-      '@motionone/types': registry.npmmirror.com/@motionone/types@10.15.1
-      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.15.1
+      '@motionone/animation': registry.npmmirror.com/@motionone/animation@10.16.3
+      '@motionone/generators': registry.npmmirror.com/@motionone/generators@10.16.4
+      '@motionone/types': registry.npmmirror.com/@motionone/types@10.16.3
+      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.16.3
       hey-listen: registry.npmmirror.com/hey-listen@1.0.8
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@motionone/easing@10.15.1:
-    resolution: {integrity: sha512-6hIHBSV+ZVehf9dcKZLT7p5PEKHGhDwky2k8RKkmOvUoYP3S+dXsKupyZpqx5apjd9f+php4vXk4LuS+ADsrWw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/easing/-/easing-10.15.1.tgz}
+  registry.npmmirror.com/@motionone/easing@10.16.3:
+    resolution: {integrity: sha512-HWTMZbTmZojzwEuKT/xCdvoMPXjYSyQvuVM6jmM0yoGU6BWzsmYMeB4bn38UFf618fJCNtP9XeC/zxtKWfbr0w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/easing/-/easing-10.16.3.tgz}
     name: '@motionone/easing'
-    version: 10.15.1
+    version: 10.16.3
     dependencies:
-      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.15.1
+      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.16.3
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@motionone/generators@10.15.1:
-    resolution: {integrity: sha512-67HLsvHJbw6cIbLA/o+gsm7h+6D4Sn7AUrB/GPxvujse1cGZ38F5H7DzoH7PhX+sjvtDnt2IhFYF2Zp1QTMKWQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/generators/-/generators-10.15.1.tgz}
+  registry.npmmirror.com/@motionone/generators@10.16.4:
+    resolution: {integrity: sha512-geFZ3w0Rm0ZXXpctWsSf3REGywmLLujEjxPYpBR0j+ymYwof0xbV6S5kGqqsDKgyWKVWpUInqQYvQfL6fRbXeg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/generators/-/generators-10.16.4.tgz}
     name: '@motionone/generators'
-    version: 10.15.1
+    version: 10.16.4
     dependencies:
-      '@motionone/types': registry.npmmirror.com/@motionone/types@10.15.1
-      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.15.1
+      '@motionone/types': registry.npmmirror.com/@motionone/types@10.16.3
+      '@motionone/utils': registry.npmmirror.com/@motionone/utils@10.16.3
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@motionone/types@10.15.1:
-    resolution: {integrity: sha512-iIUd/EgUsRZGrvW0jqdst8st7zKTzS9EsKkP+6c6n4MPZoQHwiHuVtTQLD6Kp0bsBLhNzKIBlHXponn/SDT4hA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/types/-/types-10.15.1.tgz}
+  registry.npmmirror.com/@motionone/types@10.16.3:
+    resolution: {integrity: sha512-W4jkEGFifDq73DlaZs3HUfamV2t1wM35zN/zX7Q79LfZ2sc6C0R1baUHZmqc/K5F3vSw3PavgQ6HyHLd/MXcWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/types/-/types-10.16.3.tgz}
     name: '@motionone/types'
-    version: 10.15.1
+    version: 10.16.3
     dev: false
 
-  registry.npmmirror.com/@motionone/utils@10.15.1:
-    resolution: {integrity: sha512-p0YncgU+iklvYr/Dq4NobTRdAPv9PveRDUXabPEeOjBLSO/1FNB2phNTZxOxpi1/GZwYpAoECEa0Wam+nsmhSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/utils/-/utils-10.15.1.tgz}
+  registry.npmmirror.com/@motionone/utils@10.16.3:
+    resolution: {integrity: sha512-WNWDksJIxQkaI9p9Z9z0+K27xdqISGNFy1SsWVGaiedTHq0iaT6iZujby8fT/ZnZxj1EOaxJtSfUPCFNU5CRoA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@motionone/utils/-/utils-10.16.3.tgz}
     name: '@motionone/utils'
-    version: 10.15.1
+    version: 10.16.3
     dependencies:
-      '@motionone/types': registry.npmmirror.com/@motionone/types@10.15.1
+      '@motionone/types': registry.npmmirror.com/@motionone/types@10.16.3
       hey-listen: registry.npmmirror.com/hey-listen@1.0.8
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
