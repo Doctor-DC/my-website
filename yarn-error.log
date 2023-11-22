@@ -1,5 +1,5 @@
 Arguments: 
-  /opt/homebrew/Cellar/node/18.8.0/bin/node /Users/wuduochao/.yarn/bin/yarn.js add popmotion@9.0.0
+  /opt/homebrew/Cellar/node/18.8.0/bin/node /Users/wuduochao/.yarn/bin/yarn.js add react@18 react-dom@18
 
 PATH: 
   /Users/wuduochao/.yarn/bin:/Users/wuduochao/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wuduochao/.yarn/bin:/Users/wuduochao/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: ENOENT: no such file or directory, copyfile '/Users/wuduochao/Library/Caches/Yarn/v6/npm-glob-parent-6.0.2-integrity/node_modules/glob-parent/LICENSE' -> '/Users/wuduochao/dev/frontend/node_modules/tailwindcss/node_modules/glob-parent/LICENSE'
+  Error: ENOENT: no such file or directory, copyfile '/Users/wuduochao/Library/Caches/Yarn/v6/npm-globby-13.1.2-integrity/node_modules/globby/index.d.ts' -> '/Users/wuduochao/dev/frontend/node_modules/postcss-cli/node_modules/globby/index.d.ts'
 
 npm manifest: 
   {
@@ -52,7 +52,7 @@ npm manifest:
       "crypto-js": "^4.1.1",
       "framer-motion": "^6.2.4",
       "octokit": "^2.0.7",
-      "popmotion": "10.0.2",
+      "popmotion": "9.0.0",
       "prism-react-renderer": "^1.3.5",
       "react": "^17.0.2",
       "react-dom": "^17.0.2",

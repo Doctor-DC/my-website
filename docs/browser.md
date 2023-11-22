@@ -203,7 +203,7 @@ location.href = 'b.com'
 
 本质：
 
-iframe内的目标页面 <=> iframe内的一个和父窗口同源的页面 <=> 父窗口
+iframe内的目标页面  iframe内的一个和父窗口同源的页面  父窗口
 
 
 
