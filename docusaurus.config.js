@@ -124,6 +124,7 @@ const config = {
     }),
   plugins: [
     "./postcss-tailwind-loader",
+    "docusaurus2-dotenv",
     async function unocssPlugin() {
         return {
           name: 'docusaurus-unocss',

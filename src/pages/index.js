@@ -10,6 +10,9 @@ import Hero from '@site/src/components/Hero2';
 import { AboutMe } from '../components/About';
 import { ImageList } from '../components/ImageList/index';
 import { Yolo } from '../components/yolo/index'
+// import { AvatarUploadPage } from '../components/avatar/index'
+
+import { AvatarUploadPage } from './avatar/index'
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,13 +20,14 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      {/* <Profile /> */}
+      <Profile />
       <main>
         {/* <HomepageFeatures /> */}
         <Hero />
         <Yolo />
         <AboutMe />
         <ImageList />
+        <AvatarUploadPage />
         <Contributor />
       </main>
     </Layout>
