@@ -13,8 +13,12 @@ export async function signout() {
 	console.log(error);
 };
 export async function signInWithGithub() {
+    console.log(process.env.BLOB_READ_WRITE_TOKEN);
 	const { user, session, error } = await supabase.auth.signIn({
 		provider: 'github',
+        options: {
+            redirectTo: "http://localhost:3000"
+          }
 	});
 	console.log(user, session, error);
 };
