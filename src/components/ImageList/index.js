@@ -26,7 +26,7 @@ export const ImageList = () => {
             setUrl(src)
             console.log(src);
         });
-    })
+    }, [])
 
     const getPublicUrl = (file) => {
         return supabase.storage.from('image').getPublicUrl('live/' + file.name).data.publicUrl
