@@ -10,9 +10,7 @@ import Hero from '@site/src/components/Hero2';
 import { AboutMe } from '../components/About';
 import { ImageList } from '../components/ImageList/index';
 import { Yolo } from '../components/yolo/index'
-// import { AvatarUploadPage } from '../components/avatar/index'
 
-import { AvatarUploadPage } from './avatar/index'
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
