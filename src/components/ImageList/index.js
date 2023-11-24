@@ -5,12 +5,12 @@ import { supabase } from "../../utils/auth";
 
 const requireContext = require.context("./music", false, /^\.\/.*\.jpeg$/);
 // const imageSrc = requireContext.keys().map(requireContext).map(it => {return it.default});
-let src = [];
 
 export const ImageList = () => {
     const [imgUrl, setUrl] = useState([]);
 
     useEffect(() => {
+        const src = []
         supabase.storage.from('image')
         .list('live', {
             limit: 100,
