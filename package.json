@@ -22,7 +22,7 @@
     "@mdx-js/react": "^3.0.0",
     "@octokit/rest": "^19.0.4",
     "@rooks/use-raf": "^4.11.2",
-    "@supabase/supabase-js": "^1.35.4",
+    "@supabase/supabase-js": "^2.38.5",
     "@tensorflow/tfjs": "^4.2.0",
     "@tensorflow/tfjs-backend-webgl": "^4.10.0",
     "@unocss/eslint-config": "^0.55.7",

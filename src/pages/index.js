@@ -27,7 +27,7 @@ export default function Home() {
         <Yolo />
         <AboutMe />
         <ImageList />
-        <AvatarUploadPage />
+        {/* <AvatarUploadPage /> */}
         <Contributor />
       </main>
     </Layout>

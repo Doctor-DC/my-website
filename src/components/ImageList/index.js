@@ -1,12 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import HomeImg from '@site/static/img/home.jpeg';
 import styles from './styles.module.css';
-const requireContext = require.context("./music", false, /^\.\/.*\.jpeg$/);
-const imageSrc = requireContext.keys().map(requireContext).map(it => {return it.default});
-console.log(imageSrc);
+import { supabase } from "../../utils/auth";
 
+const requireContext = require.context("./music", false, /^\.\/.*\.jpeg$/);
+// const imageSrc = requireContext.keys().map(requireContext).map(it => {return it.default});
+let src = [];
 
 export const ImageList = () => {
+    const [imgUrl, setUrl] = useState([]);
+
+    useEffect(() => {
+        supabase.storage.from('image')
+        .list('live', {
+            limit: 100,
+            offset: 0,
+            sortBy: { column: 'name', order: 'asc' },
+        }).then((res) => {
+            console.log('supbase image', res.data);
+            res.data.map(it => {
+                const url = getPublicUrl(it)
+                src.push(url)
+            })
+            requireContext.keys().map(requireContext).map(it => {src.push(it.default)})
+            setUrl(src)
+            console.log(src);
+        });
+    })
+
+    const getPublicUrl = (file) => {
+        return supabase.storage.from('image').getPublicUrl('live/' + file.name).data.publicUrl
+    }
+    
   return (
     <div className={styles.back}>
       <h2 className={styles.title}>dreamly hardware equipment</h2>
@@ -20,7 +45,7 @@ export const ImageList = () => {
       </div>
       <div className={`w-full py-32 px-24 flex flex-wrap justify-around relative ${styles['img-life']}`}>
         {
-            imageSrc.map((it,index) => {
+            imgUrl.map((it,index) => {
                 return (
                     <img src={it} key={index}  className={`w-64 h-64 object-cover mb-12 md:mb-0 ${styles['img-list']}`} />
                 )

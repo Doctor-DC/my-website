@@ -14,11 +14,17 @@ export async function signout() {
 };
 export async function signInWithGithub() {
     console.log(process.env.BLOB_READ_WRITE_TOKEN);
-	const { user, session, error } = await supabase.auth.signIn({
-		provider: 'github',
+    const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: 'github',
         options: {
-            redirectTo: "http://localhost:3000"
-          }
-	});
-	console.log(user, session, error);
+            redirectTo: 'http://localhost:3000'
+        }
+      })
+
+};
+
+export async function getUserInfo() {
+    const { data: { user } = {} } = await supabase.auth.getUser()
+	console.log('getUser', user);
+    return user
 };
