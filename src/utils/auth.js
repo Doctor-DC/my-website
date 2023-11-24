@@ -13,7 +13,6 @@ export async function signout() {
 	console.log(error);
 };
 export async function signInWithGithub() {
-    console.log(process.env.BLOB_READ_WRITE_TOKEN);
     const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
